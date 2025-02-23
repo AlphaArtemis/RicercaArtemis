@@ -2,28 +2,7 @@
     {
         "keyword": "Cyber Biologia",
         "risultati": {
-            "results": [
-                {
-                    "title": "Homepage - Khammash Lab – Control Theory and Systems Biology ...",
-                    "link": "https://bsse.ethz.ch/ctsb"
-                },
-                {
-                    "title": "A learning path for everyone - Atlanta Technical College",
-                    "link": "https://atlantatech.edu/programs/"
-                },
-                {
-                    "title": "International Society for Computational Biology: ISCB",
-                    "link": "https://www.iscb.org/"
-                },
-                {
-                    "title": "Journal of Computer Science and Systems Biology- Open Access Jour",
-                    "link": "https://www.hilarispublisher.com/computer-science-systems-biology.html"
-                },
-                {
-                    "title": "B.A. in Computer Science < University of Miami",
-                    "link": "https://bulletin.miami.edu/undergraduate-academic-programs/arts-sciences/computer-science/computer-science-ba-students-arts-sciences/"
-                }
-            ]
+            "error": "Nessun risultato trovato."
         }
     },
     {
