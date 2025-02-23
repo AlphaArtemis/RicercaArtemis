@@ -2,28 +2,7 @@
     {
         "keyword": "Cyber Biologia",
         "risultati": {
-            "results": [
-                {
-                    "title": "Homepage - Khammash Lab – Control Theory and Systems Biology ...",
-                    "link": "https://bsse.ethz.ch/ctsb"
-                },
-                {
-                    "title": "A learning path for everyone - Atlanta Technical College",
-                    "link": "https://atlantatech.edu/programs/"
-                },
-                {
-                    "title": "International Society for Computational Biology: ISCB",
-                    "link": "https://www.iscb.org/"
-                },
-                {
-                    "title": "Journal of Computer Science and Systems Biology- Open Access Jour",
-                    "link": "https://www.hilarispublisher.com/computer-science-systems-biology.html"
-                },
-                {
-                    "title": "B.A. in Computer Science < University of Miami",
-                    "link": "https://bulletin.miami.edu/undergraduate-academic-programs/arts-sciences/computer-science/computer-science-ba-students-arts-sciences/"
-                }
-            ]
+            "error": "Nessun risultato trovato."
         }
     },
     {
@@ -56,28 +35,7 @@
     {
         "keyword": "Artemis Evoluzione",
         "risultati": {
-            "results": [
-                {
-                    "title": "The Artemis Accords: Evolution or Revolution in International Space ...",
-                    "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3822590"
-                },
-                {
-                    "title": "THE ARTEMIS ACCORDS: EVOLUTION OR REVOLUTION IN ...",
-                    "link": "https://www.cambridge.org/core/journals/international-and-comparative-law-quarterly/article/artemis-accords-evolution-or-revolution-in-international-space-law/DC08E6D42F7D5A971067E6A1BA442DF1"
-                },
-                {
-                    "title": "NASA Welds Confidence Article for Next Evolution of SLS Rocket for ...",
-                    "link": "https://www.nasa.gov/missions/artemis/nasa-welds-confidence-article-for-next-evolution-of-sls-rocket-for-artemis-missions/"
-                },
-                {
-                    "title": "ARTEMIS EVOLUTION LIMITED overview - Find and update ...",
-                    "link": "https://find-and-update.company-information.service.gov.uk/company/10190772"
-                },
-                {
-                    "title": "Artemis Navigation Architecture: Early Capabilities and Long Term ...",
-                    "link": "https://ntrs.nasa.gov/citations/20230007269"
-                }
-            ]
+            "error": "Nessun risultato trovato."
         }
     }
 ]
