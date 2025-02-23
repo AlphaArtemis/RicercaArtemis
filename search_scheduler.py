@@ -53,3 +53,37 @@ import subprocess
 
 # Dopo aver salvato i risultati, aggiorniamo GitHub
 subprocess.run(["python", "update_git.py"])
+
+import json
+import os
+from datetime import datetime
+
+ARCHIVE_FILE = "archivio_ricerche.json"
+SEARCH_RESULTS_FILE = "ricerche.json"
+
+def salva_in_archivio():
+    """Aggiunge le nuove ricerche all'archivio senza sovrascrivere i vecchi dati"""
+    if not os.path.exists(ARCHIVE_FILE):
+        with open(ARCHIVE_FILE, "w") as f:
+            json.dump([], f)
+
+    with open(SEARCH_RESULTS_FILE, "r") as f:
+        nuovi_dati = json.load(f)
+
+    with open(ARCHIVE_FILE, "r+") as f:
+        archivio = json.load(f)
+        for ricerca in nuovi_dati:
+            ricerca["timestamp"] = datetime.now().isoformat()
+            archivio.append(ricerca)
+
+        f.seek(0)
+        json.dump(archivio, f, indent=4)
+
+if __name__ == "__main__":
+    salva_in_archivio()
+    print("Archivio aggiornato con le nuove ricerche!")
+
+import os
+
+# Dopo aver salvato le ricerche
+os.system("python archivio.py")
