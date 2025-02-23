@@ -48,3 +48,8 @@ import os
 os.system("git add ricerche.json")
 os.system('git commit -m "Aggiornamento ricerche notturne"')
 os.system("git push origin main")
+
+import subprocess
+
+# Dopo aver salvato i risultati, aggiorniamo GitHub
+subprocess.run(["python", "update_git.py"])
