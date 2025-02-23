@@ -31,10 +31,6 @@
         "risultati": {
             "results": [
                 {
-                    "title": "La società secondo Ishiguro: simbiosi fra umani, avatar e robot",
-                    "link": "https://www.avvenire.it/agora/pagine/hiroshi-ishiguro-ai-in-cattolica"
-                },
-                {
                     "title": "Spoke 6 - Symbiotic AI - Fondazione FAIR",
                     "link": "https://fondazione-fair.it/spoke/spoke-6-symbiotic-ai/"
                 },
@@ -43,12 +39,16 @@
                     "link": "https://www.innovationpost.it/tecnologie/robotica/una-societa-in-cui-uomini-e-robot-vivono-in-simbiosi-il-futuro-secondo-hiroshi-ishiguro/"
                 },
                 {
-                    "title": "Ai e fattore umano: business in simbiosi - la Repubblica",
-                    "link": "https://www.repubblica.it/dossier/economia/top-story/2023/12/12/news/ai_e_fattore_umano_business_in_simbiosi-421634978/"
+                    "title": "La società secondo Ishiguro: simbiosi fra umani, avatar e robot",
+                    "link": "https://www.avvenire.it/agora/pagine/hiroshi-ishiguro-ai-in-cattolica"
                 },
                 {
                     "title": "Umani e IA: perché la simbiosi è l'ultima frontiera per la ...",
                     "link": "https://www.ofcs.it/cyber/umani-e-ia-perche-la-simbiosi-e-lultima-frontiera-per-la-sopravvivenza-globale/"
+                },
+                {
+                    "title": "Il futuro del lavoro è nella collaborazione fra umani e AI - AI4Business",
+                    "link": "https://www.ai4business.it/intelligenza-artificiale/il-futuro-del-lavoro-e-nella-collaborazione-fra-umani-e-ai/"
                 }
             ]
         }
