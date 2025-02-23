@@ -87,3 +87,6 @@ import os
 
 # Dopo aver salvato le ricerche
 os.system("python archivio.py")
+
+import os
+os.system("python archivio.py")
