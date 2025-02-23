@@ -41,3 +41,10 @@ schedule.every(1).minutes.do(esegui_ricerche)  # Cambia il valore per impostare 
 while True:
     schedule.run_pending()
     time.sleep(60)  # Controlla ogni minuto se è ora di eseguire la ricerca
+
+import os
+
+# Dopo aver salvato i risultati
+os.system("git add ricerche.json")
+os.system('git commit -m "Aggiornamento ricerche notturne"')
+os.system("git push origin main")
