@@ -29,82 +29,19 @@
     {
         "keyword": "Architetture AI Ispirate al Cervello",
         "risultati": {
-            "results": [
-                {
-                    "title": "Comparing hls4ml and Vitis AI for CNN Synthesis and Evaluation on ...",
-                    "link": "https://www.politesi.polimi.it/retrieve/5f30073b-bd93-4e11-9d1e-7e9a54b6583a/2023_07_Carini.pdf"
-                },
-                {
-                    "title": "Nanocristalli di perovskite per computer più potenti ispirati alle ...",
-                    "link": "https://www.ilprogettistaindustriale.it/nanocristalli-di-perovskite-per-computer-piu-potenti-ispirati-alle-cellule-cerebrali/"
-                },
-                {
-                    "title": "Drones navigate unseen environments with liquid neural networks ...",
-                    "link": "https://news.mit.edu/2023/drones-navigate-unseen-environments-liquid-neural-networks-0419"
-                },
-                {
-                    "title": "Von Neumann e il Fantasma del Bottleneck: La Soluzione che ...",
-                    "link": "https://www.rivista.ai/2025/01/30/von-neumann-e-il-fantasma-del-bottleneck-la-soluzione-che-aspettava-da-decenni/"
-                },
-                {
-                    "title": "Intelligenza artificiale ispirata al cervello: Spiking Neural Networks ...",
-                    "link": "https://thesis.unipd.it/retrieve/5826aed6-3f7e-42b7-9ce8-6aa121d8eff2/Tomasoni_Camilla%20.pdf"
-                }
-            ]
+            "error": "Nessun risultato trovato."
         }
     },
     {
         "keyword": "Cybersecurity AI-driven",
         "risultati": {
-            "results": [
-                {
-                    "title": "Most Common AI-Powered Cyberattacks | CrowdStrike",
-                    "link": "https://www.crowdstrike.com/en-us/cybersecurity-101/cyberattacks/ai-powered-cyberattacks/"
-                },
-                {
-                    "title": "What Is AI in Cybersecurity?",
-                    "link": "https://www.sophos.com/en-us/cybersecurity-explained/ai-in-cybersecurity"
-                },
-                {
-                    "title": "What Is AI for Cybersecurity? | Microsoft Security",
-                    "link": "https://www.microsoft.com/en-us/security/business/security-101/what-is-ai-for-cybersecurity"
-                },
-                {
-                    "title": "ISACA Now Blog 2024 The Need For AI Powered Cybersecurity to ...",
-                    "link": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2024/the-need-for-ai-powered-cybersecurity-to-tackle-ai-driven-cyberattacks"
-                },
-                {
-                    "title": "Advancing cybersecurity: a comprehensive review of AI-driven ...",
-                    "link": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-024-00957-y"
-                }
-            ]
+            "error": "Nessun risultato trovato."
         }
     },
     {
         "keyword": "Cybersecurity e Difesa AI-driven",
         "risultati": {
-            "results": [
-                {
-                    "title": "Email Security Services & Solutions | Barracuda Networks",
-                    "link": "https://www.barracuda.com/products/email-protection"
-                },
-                {
-                    "title": "Defense Department Tests AI Software, Advances to Improve ...",
-                    "link": "https://www.defense.gov/News/News-Stories/Article/Article/3946607/defense-department-tests-ai-software-advances-to-improve-physical-security-post/"
-                },
-                {
-                    "title": "Elevate your network's IQ: ipoque's AI-driven DPI technology ...",
-                    "link": "https://www.rohde-schwarz.com/it/informazioni/notizie-e-stampa/all-news/elevate-your-network-s-iq-ipoque-s-ai-driven-dpi-technology-unveiled-pagina-dei-dettagli-sui-comunicati-stampa_229356-1545359.html"
-                },
-                {
-                    "title": "Beyond Security Awareness Training | KnowBe4 Human Risk Mgmt ...",
-                    "link": "https://www.knowbe4.com/"
-                },
-                {
-                    "title": "What is Network Detection and Response (NDR)? How Does it Work ...",
-                    "link": "https://www.fortinet.com/it/resources/cyberglossary/what-is-ndr"
-                }
-            ]
+            "error": "Nessun risultato trovato."
         }
     }
 ]
