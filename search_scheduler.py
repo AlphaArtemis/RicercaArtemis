@@ -40,7 +40,7 @@ schedule.every(1).minutes.do(esegui_ricerche)  # Cambia il valore per impostare 
 
 while True:
     schedule.run_pending()
-    time.sleep(60)  # Controlla ogni minuto se è ora di eseguire la ricerca
+    time.sleep(450)  # 450 secondi = 7.5 minuti per 8 ricerche all'ora
 
 import os
 

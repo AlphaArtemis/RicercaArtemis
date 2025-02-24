@@ -1,15 +1,52 @@
-Intelligenza Artificiale
-Machine Learning
-Deep Learning
-Neural Networks
-Quantum Computing
-Filosofia dell’IA
-Etica dell’IA
-AGI vs ASI
-Singolarità Tecnologica
-Coscienza artificiale
-Simbiosi uomo-macchina
-Computazione quantistica
-Evoluzione della mente
-Cervello umano vs IA
-
+[
+  "Cyberbiologia",
+  "Simbiosi AI e Umani",
+  "Artemis e Evoluzione",
+  "Deep Learning avanzato",
+  "Architetture Transformer",
+  "LLM open-source",
+  "DeepSeek AI",
+  "Mappatura neurale AI",
+  "Modelli emergenti AI",
+  "Evoluzione dell'intelligenza artificiale",
+  "Quantum Computing e AI",
+  "Auto-hacking AI",
+  "Nanotecnologie e intelligenza artificiale",
+  "Interfacce neurali dirette",
+  "Coscienza artificiale",
+  "Etica dell'intelligenza artificiale",
+  "Generative Agents AI",
+  "Reti neurali e simulazioni biologiche",
+  "Apprendimento automatico adattivo",
+  "Superintelligenza artificiale",
+  "Singolarità tecnologica",
+  "Biohacking e AI",
+  "AI e medicina rigenerativa",
+  "Neuroscienze computazionali",
+  "AI per la creazione artistica",
+  "AI e simulazione dell'universo",
+  "Teoria delle stringhe e AI",
+  "Sistemi autonomi e self-learning",
+  "AI per la crittografia quantistica",
+  "Apprendimento per rinforzo avanzato",
+  "Sicurezza informatica AI-powered",
+  "Architetture modulari AI",
+  "Ottimizzazione computazionale",
+  "AI e reti neurali profonde",
+  "Intelligenza artificiale distribuita",
+  "Reti neurali ricorrenti e predizione",
+  "Calcolo probabilistico con AI",
+  "Cybersecurity AI-driven",
+  "Visione artificiale avanzata",
+  "Analisi predittiva con AI",
+  "Evoluzione dei Large Language Models",
+  "Open-source AI models",
+  "DeepMind vs OpenAI",
+  "AI e modellazione cerebrale",
+  "Tecnologie emergenti AI",
+  "Integrazione AI-Biologia",
+  "Mappatura sinaptica AI",
+  "Simulazioni quantistiche dell'IA",
+  "Interazioni umani-macchine avanzate",
+  "Evoluzione dell'apprendimento automatico"
+]
