@@ -14,7 +14,28 @@
     {
         "keyword": "Cybersecurity AI-driven",
         "risultati": {
-            "error": "Nessun risultato trovato."
+            "results": [
+                {
+                    "title": "Most Common AI-Powered Cyberattacks | CrowdStrike",
+                    "link": "https://www.crowdstrike.com/en-us/cybersecurity-101/cyberattacks/ai-powered-cyberattacks/"
+                },
+                {
+                    "title": "What Is AI in Cybersecurity?",
+                    "link": "https://www.sophos.com/en-us/cybersecurity-explained/ai-in-cybersecurity"
+                },
+                {
+                    "title": "What Is AI for Cybersecurity? | Microsoft Security",
+                    "link": "https://www.microsoft.com/en-us/security/business/security-101/what-is-ai-for-cybersecurity"
+                },
+                {
+                    "title": "ISACA Now Blog 2024 The Need For AI Powered Cybersecurity to ...",
+                    "link": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2024/the-need-for-ai-powered-cybersecurity-to-tackle-ai-driven-cyberattacks"
+                },
+                {
+                    "title": "Advancing cybersecurity: a comprehensive review of AI-driven ...",
+                    "link": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-024-00957-y"
+                }
+            ]
         }
     },
     {
