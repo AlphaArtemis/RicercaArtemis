@@ -5,7 +5,12 @@ import os
 from search_api import google_search  # Assicurati che sia il file corretto per le ricerche
 
 # Lista delle ricerche da eseguire
-keywords = ["Cyber Biologia", "Simbiosi AI e Umani", "Artemis Evoluzione"]
+with open("parole_chiave.txt", "r", encoding="utf-8") as f:
+    all_keywords = [line.strip().replace("[", "").replace("]", "") for line in f.readlines() if line.strip()]
+
+# Prendi solo 4 ricerche alla volta, cambiandole ad ogni ciclo
+from random import sample
+keywords = sample(all_keywords, 4) if len(all_keywords) >= 4 else all_keywords
 
 # Percorso del file di output
 output_file = "ricerche.json"

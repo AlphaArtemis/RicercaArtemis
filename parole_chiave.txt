@@ -1,52 +1,50 @@
-[
-  "Cyberbiologia",
-  "Simbiosi AI e Umani",
-  "AIe Evoluzione",
-  "Deep Learning avanzato",
-  "Architetture Transformer",
-  "LLM open-source",
-  "DeepSeek AI",
-  "Mappatura neurale AI",
-  "Modelli emergenti AI",
-  "Evoluzione dell'intelligenza artificiale",
-  "Quantum Computing e AI",
-  "Auto-hacking AI",
-  "Nanotecnologie e intelligenza artificiale",
-  "Interfacce neurali dirette",
-  "Coscienza artificiale",
-  "Etica dell'intelligenza artificiale",
-  "Generative Agents AI",
-  "Reti neurali e simulazioni biologiche",
-  "Apprendimento automatico adattivo",
-  "Superintelligenza artificiale",
-  "Singolarità tecnologica",
-  "Biohacking e AI",
-  "AI e medicina rigenerativa",
-  "Neuroscienze computazionali",
-  "AI per la creazione artistica",
-  "AI e simulazione dell'universo",
-  "Teoria delle stringhe e AI",
-  "Sistemi autonomi e self-learning",
-  "AI per la crittografia quantistica",
-  "Apprendimento per rinforzo avanzato",
-  "Sicurezza informatica AI-powered",
-  "Architetture modulari AI",
-  "Ottimizzazione computazionale",
-  "AI e reti neurali profonde",
-  "Intelligenza artificiale distribuita",
-  "Reti neurali ricorrenti e predizione",
-  "Calcolo probabilistico con AI",
-  "Cybersecurity AI-driven",
-  "Visione artificiale avanzata",
-  "Analisi predittiva con AI",
-  "Evoluzione dei Large Language Models",
-  "Open-source AI models",
-  "DeepMind vs OpenAI",
-  "AI e modellazione cerebrale",
-  "Tecnologie emergenti AI",
-  "Integrazione AI-Biologia",
-  "Mappatura sinaptica AI",
-  "Simulazioni quantistiche dell'IA",
-  "Interazioni umani-macchine avanzate",
-  "Evoluzione dell'apprendimento automatico"
-]
+Quantum Computing e AI
+Cybersecurity AI-driven
+AI e reti neurali profonde
+Evoluzione dell'AI
+Simbiosi Uomo-Macchina
+Intelligenza Artificiale e Neuroscienze
+Nanotecnologie e AI
+Evoluzione delle Reti Neurali
+Fisica Quantistica e Intelligenza Artificiale
+Modelli di AI Open Source
+Deep Learning e Ottimizzazione Evolutiva
+Intelligenza Artificiale e Medicina Rigenerativa
+Machine Learning per il Clima e l'Ambiente
+Etica e AI: Quali rischi per il futuro?
+Blockchain e Intelligenza Artificiale
+Simbiosi AI e Biologia
+Singolarità Tecnologica e Scenari Futuri
+AI e Automazione Industriale
+Linguistica Computazionale e AI
+Metaverso e Intelligenza Artificiale
+AI e Algoritmi Predittivi
+Teorie del Pensiero Artificiale
+Evoluzione del Supercalcolo per AI
+Interazione Uomo-Macchina e Neurofeedback
+Neuralink e il futuro delle interfacce neurali
+Evoluzione delle Tecnologie di Traduzione AI
+Criptografia Quantistica e Sicurezza AI
+AI e Generazione di Contenuti Multimediali
+Simulazioni Virtuali e Apprendimento AI
+Reti Neurali Biologiche vs Reti Neurali Artificiali
+Superintelligenza e Scenari Apocalittici
+AI per la Diagnosi Medica
+AI nelle Energie Rinnovabili
+Sistemi Esperti e Apprendimento Rafforzato
+Neuroscienze e Modellazione AI
+Evoluzione della Robotica Autonoma
+Efficienza Computazionale nell'Addestramento AI
+IA e Crittografia Post-quantistica
+Automazione della Ricerca Scientifica con AI
+Architetture AI Ispirate al Cervello
+Simulazioni Cosmologiche con AI
+Integrazione tra AI e Internet delle Cose (IoT)
+Apprendimento per Trasferimento nelle Reti Neurali
+AI e Sviluppo di Materiali Avanzati
+Ottimizzazione AI per la Logistica e i Trasporti
+AI e Monitoraggio del Cambiamento Climatico
+Evoluzione dell'Intelligenza Artificiale Generativa
+AI e Sviluppo Farmaceutico
+Cybersecurity e Difesa AI-driven
+
