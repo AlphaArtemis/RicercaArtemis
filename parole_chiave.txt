@@ -1,7 +1,7 @@
 [
   "Cyberbiologia",
   "Simbiosi AI e Umani",
-  "Artemis e Evoluzione",
+  "AIe Evoluzione",
   "Deep Learning avanzato",
   "Architetture Transformer",
   "LLM open-source",
