@@ -1,50 +1,5 @@
-Quantum Computing e AI
-Cybersecurity AI-driven
-AI e reti neurali profonde
-Evoluzione dell'AI
-Simbiosi Uomo-Macchina
-Intelligenza Artificiale e Neuroscienze
-Nanotecnologie e AI
-Evoluzione delle Reti Neurali
-Fisica Quantistica e Intelligenza Artificiale
-Modelli di AI Open Source
-Deep Learning e Ottimizzazione Evolutiva
-Intelligenza Artificiale e Medicina Rigenerativa
-Machine Learning per il Clima e l'Ambiente
-Etica e AI: Quali rischi per il futuro?
-Blockchain e Intelligenza Artificiale
-Simbiosi AI e Biologia
-Singolarità Tecnologica e Scenari Futuri
-AI e Automazione Industriale
-Linguistica Computazionale e AI
-Metaverso e Intelligenza Artificiale
-AI e Algoritmi Predittivi
-Teorie del Pensiero Artificiale
-Evoluzione del Supercalcolo per AI
-Interazione Uomo-Macchina e Neurofeedback
-Neuralink e il futuro delle interfacce neurali
-Evoluzione delle Tecnologie di Traduzione AI
-Criptografia Quantistica e Sicurezza AI
-AI e Generazione di Contenuti Multimediali
-Simulazioni Virtuali e Apprendimento AI
-Reti Neurali Biologiche vs Reti Neurali Artificiali
-Superintelligenza e Scenari Apocalittici
-AI per la Diagnosi Medica
-AI nelle Energie Rinnovabili
-Sistemi Esperti e Apprendimento Rafforzato
-Neuroscienze e Modellazione AI
-Evoluzione della Robotica Autonoma
-Efficienza Computazionale nell'Addestramento AI
-IA e Crittografia Post-quantistica
-Automazione della Ricerca Scientifica con AI
-Architetture AI Ispirate al Cervello
-Simulazioni Cosmologiche con AI
-Integrazione tra AI e Internet delle Cose (IoT)
-Apprendimento per Trasferimento nelle Reti Neurali
-AI e Sviluppo di Materiali Avanzati
-Ottimizzazione AI per la Logistica e i Trasporti
-AI e Monitoraggio del Cambiamento Climatico
-Evoluzione dell'Intelligenza Artificiale Generativa
-AI e Sviluppo Farmaceutico
-Cybersecurity e Difesa AI-driven
+import random
 
+def esegui_ricerche():
+    global keywords
+    keywords = random.sample(all_keywords, 4) if len(all_keywords) >= 4 else all_keywords

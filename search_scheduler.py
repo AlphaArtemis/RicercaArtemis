@@ -2,96 +2,57 @@ import schedule
 import time
 import json
 import os
-from search_api import google_search  # Assicurati che sia il file corretto per le ricerche
+import random
+from search_api import google_search  # Assicurati che search_api.py sia corretto
+from archivio_infinito import salva_nel_database  # Importa la funzione per salvare nel database
 
-# Lista delle ricerche da eseguire
-with open("parole_chiave.txt", "r", encoding="utf-8") as f:
-    all_keywords = [line.strip().replace("[", "").replace("]", "") for line in f.readlines() if line.strip()]
+# Percorso del file delle parole chiave
+PAROLE_CHIAVE_FILE = "parole_chiave.txt"
 
-# Prendi solo 4 ricerche alla volta, cambiandole ad ogni ciclo
-from random import sample
-keywords = sample(all_keywords, 4) if len(all_keywords) >= 4 else all_keywords
+# Percorso del file JSON dove salvare i risultati temporanei
+RICERCHE_FILE = "ricerche.json"
 
-# Percorso del file di output
-output_file = "ricerche.json"
+# Carica le parole chiave dal file
+def carica_parole_chiave():
+    try:
+        with open(PAROLE_CHIAVE_FILE, "r", encoding="utf-8") as file:
+            keywords = [line.strip() for line in file.readlines() if line.strip()]
+        return keywords
+    except FileNotFoundError:
+        print("⚠️ File parole_chiave.txt non trovato!")
+        return []
 
+# Esegue le ricerche selezionando casualmente 4 parole chiave diverse ogni ciclo
 def esegui_ricerche():
+    keywords = carica_parole_chiave()
+
+    if len(keywords) < 4:
+        print("⚠️ Non ci sono abbastanza parole chiave per eseguire 4 ricerche.")
+        return
+
+    keywords_da_cercare = random.sample(keywords, 4)  # Prende 4 parole casuali
+
     risultati = []
-    
-    for keyword in keywords:
-        print(f"Eseguo ricerca per: {keyword}")
-        risultati.append({
-            "keyword": keyword,
-            "risultati": google_search(keyword, num_results=5)  # Modifica il numero di risultati se vuoi
-        })
+    for keyword in keywords_da_cercare:
+        print(f"🔎 Eseguo ricerca per: {keyword}")
+        risultati_query = google_search(keyword, num_results=5)  # Modifica il numero di risultati se necessario
+        risultati.append({"keyword": keyword, "risultati": risultati_query})
 
-    # Salva i risultati nel file JSON
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(risultati, f, indent=4, ensure_ascii=False)
-    
-    print(f"Ricerche salvate in {output_file}")
+        # Salva immediatamente nel database
+        salva_nel_database(keyword, risultati_query)
 
-    # Caricamento automatico su GitHub
-    push_to_github()
+    # Salva i risultati temporanei in ricerche.json
+    with open(RICERCHE_FILE, "w", encoding="utf-8") as file:
+        json.dump({"results": risultati}, file, indent=4, ensure_ascii=False)
 
-def push_to_github():
-    """Esegue il push automatico delle ricerche su GitHub"""
-    os.system("git add ricerche.json")
-    os.system('git commit -m "Aggiornamento ricerche"')
-    os.system("git push origin main")
+    print("✅ Ricerche completate e salvate.")
 
-# Programma la ricerca ogni minuto (puoi cambiare l'intervallo)
-schedule.every(1).minutes.do(esegui_ricerche)  # Cambia il valore per impostare l'orario preferito
+# Programma l'esecuzione automatica ogni 7.5 minuti
+schedule.every(7.5).minutes.do(esegui_ricerche)  # Modifica il valore se necessario
 
+print("🟢 Search Scheduler avviato...")
+
+# Loop infinito per gestire le ricerche pianificate
 while True:
     schedule.run_pending()
-    time.sleep(450)  # 450 secondi = 7.5 minuti per 8 ricerche all'ora
-
-import os
-
-# Dopo aver salvato i risultati
-os.system("git add ricerche.json")
-os.system('git commit -m "Aggiornamento ricerche notturne"')
-os.system("git push origin main")
-
-import subprocess
-
-# Dopo aver salvato i risultati, aggiorniamo GitHub
-subprocess.run(["python", "update_git.py"])
-
-import json
-import os
-from datetime import datetime
-
-ARCHIVE_FILE = "archivio_ricerche.json"
-SEARCH_RESULTS_FILE = "ricerche.json"
-
-def salva_in_archivio():
-    """Aggiunge le nuove ricerche all'archivio senza sovrascrivere i vecchi dati"""
-    if not os.path.exists(ARCHIVE_FILE):
-        with open(ARCHIVE_FILE, "w") as f:
-            json.dump([], f)
-
-    with open(SEARCH_RESULTS_FILE, "r") as f:
-        nuovi_dati = json.load(f)
-
-    with open(ARCHIVE_FILE, "r+") as f:
-        archivio = json.load(f)
-        for ricerca in nuovi_dati:
-            ricerca["timestamp"] = datetime.now().isoformat()
-            archivio.append(ricerca)
-
-        f.seek(0)
-        json.dump(archivio, f, indent=4)
-
-if __name__ == "__main__":
-    salva_in_archivio()
-    print("Archivio aggiornato con le nuove ricerche!")
-
-import os
-
-# Dopo aver salvato le ricerche
-os.system("python archivio.py")
-
-import os
-os.system("python archivio.py")
+    time.sleep(30)  # Controlla ogni 30 secondi se è il momento di eseguire una ricerca
