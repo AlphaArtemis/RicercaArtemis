@@ -1,0 +1,6 @@
+[
+  "import random",
+  "def esegui_ricerche():",
+  "global keywords",
+  "keywords = random.sample(all_keywords, 4) if len(all_keywords) >= 4 else all_keywords"
+]

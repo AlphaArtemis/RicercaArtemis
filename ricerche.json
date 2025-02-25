@@ -1,26 +1,112 @@
-[
+{
+  "results": [
     {
-        "keyword": "Evoluzione delle Reti Neurali",
-        "risultati": {
-            "error": "Nessun risultato trovato."
-        }
+      "keyword": "import random",
+      "risultati": {
+        "results": [
+          {
+            "title": "Generate pseudo-random numbers \u2014 Python 3.13.2 documentation",
+            "link": "https://docs.python.org/3/library/random.html"
+          },
+          {
+            "title": "Python Random Module - GeeksforGeeks",
+            "link": "https://www.geeksforgeeks.org/python-random-module/"
+          },
+          {
+            "title": "Experiment stuck initialising import random - Online experiments ...",
+            "link": "https://discourse.psychopy.org/t/experiment-stuck-initialising-import-random/19178"
+          },
+          {
+            "title": "How to import random?",
+            "link": "https://python-forum.io/thread-16247.html"
+          },
+          {
+            "title": "Python \"import random\" Error - Stack Overflow",
+            "link": "https://stackoverflow.com/questions/13813164/python-import-random-error"
+          }
+        ]
+      }
     },
     {
-        "keyword": "Evoluzione dell'Intelligenza Artificiale Generativa",
-        "risultati": {
-            "error": "Nessun risultato trovato."
-        }
+      "keyword": "def esegui_ricerche():",
+      "risultati": {
+        "results": [
+          {
+            "title": "Understand & manage your location when you search on Google ...",
+            "link": "https://support.google.com/websearch/answer/179386?hl=en&co=GENIE.Platform%3DAndroid"
+          },
+          {
+            "title": "WRONG COLOR PALETTE IN GOOGLE APPS : r/oneui",
+            "link": "https://www.reddit.com/r/oneui/comments/z1orqp/wrong_color_palette_in_google_apps/"
+          },
+          {
+            "title": "Loggly - Prezzi, recensioni, informazioni - Capterra Italia 2025",
+            "link": "https://www.capterra.it/software/148959/loggly"
+          },
+          {
+            "title": "Crea il tuo ChatGPT per i PDF con Langchain | Intelligenza ...",
+            "link": "https://www.intelligenzaartificialeitalia.net/post/crea-il-tuo-chatgpt-per-i-pdf-con-langchain"
+          },
+          {
+            "title": "Nursing Central - App su Google Play",
+            "link": "https://play.google.com/store/apps/details?id=com.unbound.android.ubnc2l&hl=it"
+          }
+        ]
+      }
     },
     {
-        "keyword": "Simulazioni Cosmologiche con AI",
-        "risultati": {
-            "error": "Nessun risultato trovato."
-        }
+      "keyword": "global keywords",
+      "risultati": {
+        "results": [
+          {
+            "title": "Global keyword in Python - GeeksforGeeks",
+            "link": "https://www.geeksforgeeks.org/global-keyword-in-python/"
+          },
+          {
+            "title": "Python Global Keyword | What is Python Global used for? |",
+            "link": "https://www.toppr.com/guides/python-guide/references/methods-and-functions/global-keyword/python-global-keyword-with-examples/"
+          },
+          {
+            "title": "python - Why isn't the 'global' keyword needed to access a global ...",
+            "link": "https://stackoverflow.com/questions/4693120/why-isnt-the-global-keyword-needed-to-access-a-global-variable"
+          },
+          {
+            "title": "Maximum number (256) of shader global keywords exceeded ...",
+            "link": "https://discussions.unity.com/t/maximum-number-256-of-shader-global-keywords-exceeded-keyword-will-be-ignored-and-black-materials/771223"
+          },
+          {
+            "title": "The #1 technical and creative solutions provider to the global video ...",
+            "link": "https://www.keywordsstudios.com/"
+          }
+        ]
+      }
     },
     {
-        "keyword": "Integrazione tra AI e Internet delle Cose (IoT)",
-        "risultati": {
-            "error": "Nessun risultato trovato."
-        }
+      "keyword": "keywords = random.sample(all_keywords, 4) if len(all_keywords) >= 4 else all_keywords",
+      "risultati": {
+        "results": [
+          {
+            "title": "grep - Find lines containing all keywords in bash script - Stack ...",
+            "link": "https://stackoverflow.com/questions/1829239/find-lines-containing-all-keywords-in-bash-script"
+          },
+          {
+            "title": "Lua 5.1 Reference Manual",
+            "link": "https://www.lua.org/manual/5.1/manual.html"
+          },
+          {
+            "title": "algorithm - C# Finding relevant document snippets for search result ...",
+            "link": "https://stackoverflow.com/questions/282002/c-sharp-finding-relevant-document-snippets-for-search-result-display"
+          },
+          {
+            "title": "BuiltIn",
+            "link": "https://robotframework.org/robotframework/latest/libraries/BuiltIn.html"
+          },
+          {
+            "title": "applescript - How to remove a large number of unused keywords ...",
+            "link": "https://apple.stackexchange.com/questions/347602/how-to-remove-a-large-number-of-unused-keywords-from-apple-photos-app"
+          }
+        ]
+      }
     }
-]
+  ]
+}

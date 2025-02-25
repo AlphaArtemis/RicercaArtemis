@@ -3,56 +3,63 @@ import time
 import json
 import os
 import random
-from search_api import google_search  # Assicurati che search_api.py sia corretto
-from archivio_infinito import salva_nel_database  # Importa la funzione per salvare nel database
 
-# Percorso del file delle parole chiave
-PAROLE_CHIAVE_FILE = "parole_chiave.txt"
+from search_api import google_search  # Assicurati che sia il file corretto per le ricerche
 
-# Percorso del file JSON dove salvare i risultati temporanei
-RICERCHE_FILE = "ricerche.json"
+# Percorso file di parole chiave
+parole_chiave_file = "parole_chiave.txt"
+# Percorso file che tiene traccia delle ultime ricerche
+ultime_ricerche_file = "ultime_ricerche.json"
 
-# Carica le parole chiave dal file
-def carica_parole_chiave():
-    try:
-        with open(PAROLE_CHIAVE_FILE, "r", encoding="utf-8") as file:
-            keywords = [line.strip() for line in file.readlines() if line.strip()]
-        return keywords
-    except FileNotFoundError:
-        print("⚠️ File parole_chiave.txt non trovato!")
-        return []
+# Carica tutte le parole chiave dal file
+with open(parole_chiave_file, "r", encoding="utf-8") as f:
+    all_keywords = [line.strip() for line in f.readlines() if line.strip()]
 
-# Esegue le ricerche selezionando casualmente 4 parole chiave diverse ogni ciclo
+# Carica le ultime parole chiave usate per evitare ripetizioni
+if os.path.exists(ultime_ricerche_file):
+    with open(ultime_ricerche_file, "r", encoding="utf-8") as f:
+        ultime_ricerche = json.load(f)
+else:
+    ultime_ricerche = []
+
+# Se ci sono troppe parole esclude quelle già usate
+parole_disponibili = [word for word in all_keywords if word not in ultime_ricerche]
+
+# Se non ci sono abbastanza parole disponibili, resetta la memoria delle ultime ricerche
+if len(parole_disponibili) < 4:
+    parole_disponibili = all_keywords.copy()
+    ultime_ricerche = []
+
+# Seleziona 4 nuove parole chiave casuali senza ripetizioni
+nuove_ricerche = random.sample(parole_disponibili, 4)
+
+# Aggiorna la memoria delle ultime ricerche
+ultime_ricerche = nuove_ricerche
+
+# Salva le ultime ricerche per evitare ripetizioni nei prossimi cicli
+with open(ultime_ricerche_file, "w", encoding="utf-8") as f:
+    json.dump(ultime_ricerche, f, indent=2)
+
+# Percorso del file di output
+output_file = "ricerche.json"
+
 def esegui_ricerche():
-    keywords = carica_parole_chiave()
-
-    if len(keywords) < 4:
-        print("⚠️ Non ci sono abbastanza parole chiave per eseguire 4 ricerche.")
-        return
-
-    keywords_da_cercare = random.sample(keywords, 4)  # Prende 4 parole casuali
-
     risultati = []
-    for keyword in keywords_da_cercare:
-        print(f"🔎 Eseguo ricerca per: {keyword}")
-        risultati_query = google_search(keyword, num_results=5)  # Modifica il numero di risultati se necessario
-        risultati.append({"keyword": keyword, "risultati": risultati_query})
+    for keyword in nuove_ricerche:
+        print(f"Eseguo ricerca per: {keyword}")
+        risultati.append({
+            "keyword": keyword,
+            "risultati": google_search(keyword, num_results=5)
+        })
 
-        # Salva immediatamente nel database
-        salva_nel_database(keyword, risultati_query)
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump({"results": risultati}, f, indent=2)
 
-    # Salva i risultati temporanei in ricerche.json
-    with open(RICERCHE_FILE, "w", encoding="utf-8") as file:
-        json.dump({"results": risultati}, file, indent=4, ensure_ascii=False)
+    print(f"✅ Ricerche salvate in {output_file}")
 
-    print("✅ Ricerche completate e salvate.")
+# Imposta la programmazione della ricerca
+schedule.every(7).minutes.do(esegui_ricerche)  # Modifica l'intervallo se necessario
 
-# Programma l'esecuzione automatica ogni 7.5 minuti
-schedule.every(7.5).minutes.do(esegui_ricerche)  # Modifica il valore se necessario
-
-print("🟢 Search Scheduler avviato...")
-
-# Loop infinito per gestire le ricerche pianificate
 while True:
     schedule.run_pending()
-    time.sleep(30)  # Controlla ogni 30 secondi se è il momento di eseguire una ricerca
+    time.sleep(1)
